@@ -19,14 +19,15 @@ export default class App extends React.Component {
     this.state = {authenticated: false};
   }
 
+  // Change your Firebase settings here
   componentDidMount() {
     firebase.initializeApp({
-      apiKey: "AIzaSyBeds8KY-Jw6gbcxgzhw9rRkmEc3Bm2ISc",
-      authDomain: "reactauthentication-8ba67.firebaseapp.com",
-      databaseURL: "https://reactauthentication-8ba67.firebaseio.com",
-      projectId: "reactauthentication-8ba67",
-      storageBucket: "reactauthentication-8ba67.appspot.com",
-      messagingSenderId: "315993440137"
+      apiKey: "xxxx",
+      authDomain: "xxxxx.firebaseapp.com",
+      databaseURL: "xxxxx.firebaseio.com",
+      projectId: "xxxxx",
+      storageBucket: "xxxxx.appspot.com",
+      messagingSenderId: "xxxxx"
     }); 
 
     firebase.auth().onAuthStateChanged((user) => {
