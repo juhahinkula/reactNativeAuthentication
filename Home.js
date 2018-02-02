@@ -9,7 +9,7 @@ export default class Home extends React.Component {
 
   logout = () => {
     firebase.auth().signOut().then(() => {
-      this.props.navigation.navigate('Login');
+      // Logout
     }).catch(function(error) {
       // An error happened.
     });
